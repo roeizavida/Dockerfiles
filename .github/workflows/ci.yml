@@ -14,5 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Test CI
+    - name: Run CI script
       run: .github/workflows/ci.sh ${{ github.sha }} ${{ secrets.DOCKER_HUB_USERNAME }} ${{ secrets.DOCKER_HUB_PASSWORD }}
