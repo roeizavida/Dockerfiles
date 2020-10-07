@@ -1,7 +1,7 @@
-FROM centos/nginx-116-centos7
+FROM centos:7
 
 RUN yum update -y && \
-    yum install -y ksh && \
+    yum install -y ksh httpd && \
     yum clean all && \
     rm -rf /var/cache/yum
 
